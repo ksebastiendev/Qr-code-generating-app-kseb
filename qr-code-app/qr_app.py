@@ -25,8 +25,9 @@ if st.button("Générer le QR Code"):
     qr.make(fit=True)
 
     img = qr.make_image(fill_color=fill_color, back_color=back_color)
+img = img.convert("RGB")  # 🔧 Correction obligatoire
 
-    st.image(img, caption="Votre QR Code")
+st.image(img, caption="Votre QR Code")
 
     # Télécharger le QR Code
     img.save("qr_code.png")
