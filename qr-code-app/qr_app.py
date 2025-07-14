@@ -60,7 +60,7 @@ with col_center:
             img = qr.make_image(fill_color=fill_color, back_color=back_color)
             img = img.convert("RGB")
 
-            st.image(img, caption="Voici votre QR Code", use_column_width=True)
+            st.image(img, caption="Voici votre QR Code", use_container_width=True)
 
             img.save("qr_code.png")
             with open("qr_code.png", "rb") as file:
