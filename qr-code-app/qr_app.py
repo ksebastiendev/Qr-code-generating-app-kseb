@@ -32,6 +32,29 @@ st.image("qr-code-app/mon_logo1.png", width=120)
 
 # Image illustrative du scan
 st.image("qr-code-app/scan_illustration.jpg", use_container_width=True)
+# Animation CSS pour l'image d'illustration
+st.markdown("""
+    <style>
+    .fade-in {
+        animation: fadeInAnimation ease 2s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
+
+    @keyframes fadeInAnimation {
+        0% { opacity: 0; transform: translateY(20px); }
+        100% { opacity: 1; transform: translateY(0); }
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+# Affichage de l'image avec effet
+st.markdown(
+    f"""
+    <img src="qr-code-app/scan_illustration.jpg" class="fade-in" style="width:100%; max-width:500px; display:block; margin:auto;">
+    """, unsafe_allow_html=True
+)
 
 # Titre principal
 st.title("🔗 Générateur de QR Code Simple")
