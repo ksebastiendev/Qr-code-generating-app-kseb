@@ -27,14 +27,14 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Logo ou image en haut (remplace le lien par ton propre logo si besoin)
-st.image("qr-code-app/mon_logo1.png", width=120)
-# Image illustrative du scan (adaptée à la largeur du texte)
-st.image("qr-code-app/scan_illustration.jpg", use_container_width=True)
+# Logo principal
+st.image("mon_logo1.png", width=120)
+
+# Image illustrative du scan
+st.image("scan_illustration.jpg", use_container_width=True)
 
 # Titre principal
 st.title("🔗 Générateur de QR Code Simple")
-
 st.write("Créez vos QR codes en quelques clics avec vos couleurs préférées !")
 
 # Centrage du formulaire avec des colonnes
@@ -42,7 +42,6 @@ col_center = st.columns([1,2,1])[1]
 
 with col_center:
     data = st.text_input("Entrez votre texte ou lien ici", placeholder="Ex : hello young dev group")
-
 
     fill_color = st.color_picker("Couleur du QR Code", "#000000")
     back_color = st.color_picker("Couleur de fond", "#FFFFFF")
