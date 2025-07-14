@@ -43,7 +43,7 @@ with col_center:
 
 
     fill_color = st.color_picker("Couleur du QR Code", "#000000")
-    back_color = st.color_picker("Couleur de fond", "#FFFF00")
+    back_color = st.color_picker("Couleur de fond", "#FFFFFF")
 
     if st.button("Générer le QR Code"):
 
