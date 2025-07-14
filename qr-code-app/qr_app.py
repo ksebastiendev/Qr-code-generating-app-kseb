@@ -28,10 +28,10 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Logo principal
-st.image("mon_logo1.png", width=120)
+st.image("qr-code-app/mon_logo1.png", width=120)
 
 # Image illustrative du scan
-st.image("scan_illustration.jpg", use_container_width=True)
+st.image("qr-code-app/scan_illustration.jpg", use_container_width=True)
 
 # Titre principal
 st.title("🔗 Générateur de QR Code Simple")
