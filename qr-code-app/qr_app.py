@@ -39,7 +39,7 @@ st.write("Créez vos QR codes en quelques clics avec vos couleurs préférées !
 col_center = st.columns([1,2,1])[1]
 
 with col_center:
-    data = st.text_input("Entrez votre texte ou lien ici", placeholder="Ex : hello ksebastien")
+    data = st.text_input("Entrez votre texte ou lien ici", placeholder="Ex : hello young dev group")
 
 
     fill_color = st.color_picker("Couleur du QR Code", "#000000")
