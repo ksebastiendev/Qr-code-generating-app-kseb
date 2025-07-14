@@ -28,7 +28,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Logo ou image en haut (remplace le lien par ton propre logo si besoin)
-st.image("https://i.imgur.com/5cL5f.gif", width=120)
+st.image("mon_logo.png", width=120)
 
 # Titre principal
 st.title("🔗 Générateur de QR Code Simple")
