@@ -28,7 +28,9 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Logo ou image en haut (remplace le lien par ton propre logo si besoin)
-st.image("qr-code-app/mon_logo.png", width=120)
+st.image("qr-code-app/mon_logo1.png", width=120)
+# Image illustrative du scan (adaptée à la largeur du texte)
+st.image("qr-code-app/scan_illustration.jpg", use_container_width=True)
 
 # Titre principal
 st.title("🔗 Générateur de QR Code Simple")
